@@ -46,10 +46,8 @@ crossorigin="anonymous"> <!--cdn code has been imported 7-10 line code css-->
     }
 
     .title{
-      background-color: #000000cf;
-      
-      padding-bottom: 1rem;
-      margin-bottom: 2rem;
+      background-color: #000 ;      
+      padding-bottom: 1rem;     
     }
     #quote{
       text-align: left;
@@ -88,6 +86,77 @@ padding: 4px;
 position: absolute;
 text-align: end;
 }
+
+.inspo{
+  text-align: center;
+  color: #ffff;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.dropdown-toggle {
+    white-space: nowrap;
+    width: 100%;
+    color: #fff;
+    background: #f77b1d;
+        margin: 10px 0px;
+}
+.dropdown-menu.show {
+display: block;
+    width: 100%;
+    text-align: center;
+    font-style: italic;
+        font-family: sans-serif;
+    font-size: 12px;
+}
+#character {
+  background-color: #303030;
+}
+h2 {
+  color: #fff;
+      margin: 20px 0px;
+      text-align: center;
+
+}
+section {
+  border-top: 1px solid #603d12;
+}
+.quotes {
+  background-color: #000;
+}
+.dropdown-toggle::after {
+    display: none;
+    
+}
+.slider {
+  background-color: #000;
+  border-top: 1px solid #603d12;
+  
+}
+#toggler{
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: var(--bs-navbar-toggler-icon-bg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    color: #fff;
+    
+}
+@media (max-width:991px) { 
+  #y1 {
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    margin-top: 5rem;
+  }
+  #Timg {
+    width: 10rem;
+    height: 10rem;
+    text-align: center;
+    margin-top: 3rem;
+  }
+ }
         /*h1-h6, button, input or any other are called as tags */
 </style>
         
@@ -103,7 +172,9 @@ text-align: end;
       <a class="navbar-brand" id="brand" href="#">
       Naruto</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list" id="toggler" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+</svg>
     </button>
     <div class="collapse navbar-collapse " id="navbarSupportedContent">
       
@@ -130,36 +201,66 @@ text-align: end;
            
           </div>
           <div class="col order-5">
-            <img src="Intro.png" alt="naruto" width="350" height="500">
+            <img src="Intro.png" alt="naruto" id="Timg" width="350" height="500">
           </div>
         </div>
       </div>
 
 </Section><!----Title-->
 
-<section class="Char" id="character">
-<div class="container text-center">
-  
-  <div class="row">
-    <h2>BEST UZUMAKIES</h2>
-    <a href="#" class="back-to-top d-flex align-items-center justify-content-center active"><i class="bi bi-arrow-up-short"></i></a>
-    <div class="col" id="img1">
-      <img src="Naruto.webp" alt="naruto" width="108" height="220"><br><h1>Naruto</h1>
+<section class="character-potfolio" id="character">
+  <div>
+    <h2>NARUTO CHARACTERS</h2>
+  </div>
+  <div class="row row-cols-1 row-cols-md-3 g-4">
+     <div class="col">
+    <div class="card h-100">
+      <img src="wallpaper_ (9).jpg" class="card-img-top Itachi" alt="Itachi">
+      <div class="card-body">
+        <h5 class="card-title">Itachi</h5>
+        <p class="card-text">Sacrificed Pawn.</p>
+      </div>
     </div>
-    <div class="col order-5" id="img2">
-      <img src="Nagato.webp"
-alt="Nagato" width="160" height="225"><br><h1>Nagato</h1>
-   
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="Naruto.jpg" class="card-img-top naruto" alt="Naruto">
+      <div class="card-body">
+        <h5 class="card-title">Naruto</h5>
+        <p class="card-text">Hero of the Naruto Series.</p>
+      </div>
     </div>
-    <div class="col order-1" id="img3">
-      <img src="mito.png" alt="Mito"
-width="175" height="230"><br><h1>Mito</h1>
-      
+  </div>
+ 
+  <div class="col">
+    <div class="card h-100">
+      <img src="wallpaper_ (8).jpg" class="card-img-top" alt="Sasuke">
+      <div class="card-body">
+        <h5 class="card-title">Sasuke</h5>
+        <p class="card-text">Anti Hero.</p>
+      </div>
+    </div>
+  </div>
+  <div class="col">
+    <div class="card h-100">
+      <img src="Mito.webp" class="card-img-top" alt="Mito">
+      <div class="card-body">
+        <h5 class="card-title">Mito</h5>
+        <p class="card-text">Great Grand Mother of Naruto.</p>
+      </div>
     </div>
   </div>
 </div>
 
-<div id="carouselExampleIndicators" class="carousel slide">
+</section>
+
+
+
+<section class="slider">
+  <div>
+    <h2>Best Uchihas</h2>
+  </div>
+  <div id="carouselExampleIndicators" class="carousel slide">
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleIndicators"
 data-bs-slide-to="0" class="active" aria-current="true"
@@ -202,17 +303,44 @@ data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
 </div>
 
 
-<div class="btn-group">
-  <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
-    Right-aligned menu example
-  </button>
-  <ul class="dropdown-menu dropdown-menu-end">
-    <li><button class="dropdown-item" type="button">Action</button></li>
-    <li><button class="dropdown-item" type="button">Another action</button></li>
-    <li><button class="dropdown-item" type="button">Something else here</button></li>
-  </ul>
-</div>
+
 </section>
+
+<section class="quotes">
+  <div>
+    <h1 class="inspo">INPIRATIONAL NARUTO QUOTES</h1>
+  <div class="dropdown">
+    <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+      Naruto
+    </button>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item">IF YOU DON’T LIKE THE HAND THAT FATE’S DEALT YOU WITH, FIGHT FOR A NEW ONE</a></li>
+      <li><a class="dropdown-item">HARD WORK IS WORTHLESS FOR THOSE THAT DON’T BELIEVE IN THEMSELVES</a> </li>
+      <li><a class="dropdown-item">SOMEBODY TOLD ME I’M A FAILURE, I’LL PROVE THEM WRONG</a> </li>
+    </ul>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Obito
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item">THE MOMENT PEOPLE COME TO KNOW LOVE, THEY RUN THE RISK OF CARRYING HATE</a></li>
+        <li><a class="dropdown-item">IN THE NINJA WORLD, THOSE WHO DON’T FOLLOW THE RULES ARE TRASH. BUT, THOSE WHO ABANDON THEIR FRIENDS ARE EVEN WORSE THAN TRASH</a></li>
+        <li><a class="dropdown-item">A true leader can let others step on his corpse, but he will never step on his comrades</a></li>
+      </ul><br>
+      <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+        Itachi
+      </button>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item">Growth occurs when one goes beyond one's limits</a></li>
+        <li><a class="dropdown-item">Even the strongest of opponents always have a weakness</a></li>
+        <li><a class="dropdown-item">It is foolish to fear what we have yet to see and know</a></li>
+        <li><a class="dropdown-item">Those who cannot acknowledge themselves, will eventually fail</a></li>
+        <li><a class="dropdown-item">However strong you become, never seek to bear everything alone. If you do, failure is certain</a></li>
+      </ul>
+  </div>
+</section>
+
+
 </main>
 
 
